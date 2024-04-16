@@ -27,7 +27,7 @@ const LoginComponent = () => {
     const onRegister = async () => {
         try{
             setIsLoading(true)
-            await addUser({ name: name+" nn inteiror user", userId: userId, password: password, role: "customer" })
+            await addUser({ name: name, userId: userId, password: password, role: "customer" })
             setIsLoading(false)
             setSuccess(true)
         }catch{(e)=>{console.log(e)}}
@@ -47,7 +47,7 @@ const LoginComponent = () => {
                         <p className={styles.heading}>{isRegister ? "Request Call Back" : "Login"}</p>
                         {/* <Image width={130} height={50} alt="al azeem logo" src={logo}></Image> */}
                         </div>
-                    <p className={styles.content}>Leave your details and let's connect. Our team will reach out promptly to discuss your project requirements and goals.</p>
+                    <p className={styles.content}>Leave your details and let&apos;s connect. Our team will reach out promptly to discuss your project requirements and goals.</p>
                     <form>
                         {
                             isRegister &&
