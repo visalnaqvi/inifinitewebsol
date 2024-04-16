@@ -1,0 +1,32 @@
+.cardBody{
+    max-width: 30%;
+    min-width: 300px;
+    margin: 10px;
+    box-shadow: 10px 10px 30px #00000030;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cardImg{
+    position: relative;
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.headerHeading{
+    font-weight: 700;
+    color: #444444;
+}
+
+.headerTag{
+    font-size: 12px;
+}
+
+.testi{
+    font-size: 15px;
+    margin-top: 20px;
+    color: #444444;
+}

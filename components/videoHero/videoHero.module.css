@@ -1,0 +1,44 @@
+.wrapper{
+    background-color: #DFF5FF;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.column{
+    width: 50%;
+    padding: 20px;
+}
+
+.column:last-child{
+    text-align: center;
+    cursor: pointer;
+}
+
+.phoneWrapper{
+    margin: 10px 0;
+}
+
+.icon{
+    background-color: var(--primary-blue);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    color: #fff;
+    border-radius: 100%;
+}
+
+.phone{
+    text-decoration: underline;
+    font-style: italic;
+    color: var(--primary-blue);
+    font-size: 18px;
+    font-weight: 800;
+}
+@media only screen and (max-width:1000px) {
+    .column{
+        width: 100%;
+    }
+}
