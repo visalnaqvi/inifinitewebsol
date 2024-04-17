@@ -5,7 +5,7 @@ const ContactUsPage = () => {
     return( 
         <>
         <Head>
-        <title>Contact Us | Best Interior and Construction Service in Noida</title>
+        <title>Contact Us | Webiste and Web Apps</title>
       </Head>
         <ContactUs></ContactUs></> );
 }

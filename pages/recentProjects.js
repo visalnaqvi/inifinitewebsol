@@ -5,7 +5,7 @@ const RecentProjectsPage = () => {
     return( 
         <>
         <Head>
-        <title>Interior Projects | Best Interior and Construction Service in Noida</title>
+        <title>Interior Projects | Webiste and Web Apps</title>
       </Head>
         <RecentProjects></RecentProjects>
         </> );

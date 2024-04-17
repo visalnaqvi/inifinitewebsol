@@ -29,7 +29,7 @@ const router = useRouter();
    
     <div>
        <Head>
-      <title>Best Interior and Construction Service in Noida</title>
+      <title>Webiste and Web Apps Service in Noida</title>
     </Head>
     
         <SingleImage url={[background , background_mb]} /> 
