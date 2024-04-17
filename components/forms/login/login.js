@@ -30,6 +30,7 @@ const LoginComponent = () => {
             await addUser({ name: name, userId: userId, password: password, role: "customer" })
             setIsLoading(false)
             setSuccess(true)
+            router.push("/thankyou")
         }catch{(e)=>{console.log(e)}}
 
         // if (!checkStorageForAdminToken()) {
