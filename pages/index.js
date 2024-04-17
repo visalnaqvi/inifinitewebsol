@@ -43,6 +43,7 @@ const router = useRouter();
             <p className="content">At InfiniteWeb Solutions, we believe in the power of limitless creativity and innovation to shape the digital landscape. Our foundation is built on a commitment to excellence, integrity, and client satisfaction. We are dedicated to crafting immersive web experiences that transcend expectations, empowering businesses to thrive in the digital realm. With a team of passionate experts, we harness the latest technologies and design trends to unlock infinite possibilities for our clients. From concept to execution, we are your partners in success, providing tailored solutions that elevate your online presence and drive measurable results. Welcome to a world of endless opportunities with InfiniteWeb Solutions.</p>
            <div className="body-wrapper justify-start">
             <button className="primary-btn blue" onClick={()=>{router.push("/recentProjects")}} style={{marginRight:"10px"}}>Explore Recent Projects</button>
+            <button className="primary-btn blue" onClick={()=>{router.push("/login")}} style={{marginRight:"10px"}}>Request a Callback</button>
             </div>
             <div style={{position:"relative", width:"100%", height:`${size.width<800?"200px":"600px"}`}}>
             <Image onClick={()=>{router.push("/login")}} src={longBanner} fill={true} style={{objectFit:"contain"}} alt="some"/>
