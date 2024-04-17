@@ -4,6 +4,7 @@ import QuickContacts from "@/components/contactBox/quickContact/quickContact"
 import ContactBox from "@/components/contactBox/contactBox/contactBox"
 import { SessionProvider } from "next-auth/react"
 import Head from "next/head.js"
+import Script from "next/script"
 
 const noAuthRoutes = ['/welcome', '/newLogin', '/register'];
 function MyApp({ Component, pageProps: { session, ...pageProps } }) {
@@ -12,6 +13,14 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
       <Head>
       <link rel="icon" href="/favicon.png" />
       </Head>
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-11324889747"></Script>
+<Script id="analytics">
+  {`window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-11324889747');`}
+</Script>
     <NavBar />
     <main>
       <Component {...pageProps} />
