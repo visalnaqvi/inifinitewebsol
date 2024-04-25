@@ -21,6 +21,15 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
 
   gtag('config', 'AW-11324889747');`}
 </Script>
+<Script id="tag">
+{`
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EFY1G1JC42');
+`}
+</Script>
     <NavBar />
     <main>
       <Component {...pageProps} />

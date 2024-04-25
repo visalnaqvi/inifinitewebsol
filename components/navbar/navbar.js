@@ -20,6 +20,7 @@ const NavBar = () => {
             setIsVisible(false);
         }
     }
+
     return (
         <div>
             <div className={`${styles.navBar} body-wrapper justify-between`} style={{ flexWrap: "nowrap" }}>

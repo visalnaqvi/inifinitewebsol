@@ -3,6 +3,18 @@ import styles from "./contactBox.module.css"
 import { useRouter } from "next/navigation";
 const ContactBox = ()=>{
     const router = useRouter()
+    function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-11324889747/WLMkCITlkaoZEJO1kJgq',
+            'event_callback': callback
+        });
+        return false;
+      }
     return(
         <div className={`body-wrapper ${styles.wrapper}`}>
             <div className={styles.contactBoxSection}>
@@ -15,7 +27,9 @@ const ContactBox = ()=>{
             <div className={styles.contactBoxSection}>
                 {/* <p><strong>OR CLASS US NOW ON</strong></p><br></br> */}
                 <div>
-                <Link href="tel:8920152023"><button>+91 8920152023</button></Link>
+                <Link onClick={()=>{
+            gtag_report_conversion()
+           }} href="tel:8920152023"><button>+91 8920152023</button></Link>
                 </div>
             </div>
         </div>

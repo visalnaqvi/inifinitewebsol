@@ -8,7 +8,18 @@ import Image from "next/image"
 const VideoHero = ()=>{
     const router = useRouter()
     const size = useWindowSize();
-
+    function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-11324889747/WLMkCITlkaoZEJO1kJgq',
+            'event_callback': callback
+        });
+        return false;
+      }
     return (
         <div className={`${styles.wrapper} body-wrapper`}>
         <div className={styles.column}>
@@ -16,7 +27,9 @@ const VideoHero = ()=>{
             {marginTop:0}
         }>Inspiring Creations: Our Recent Web Marvels</h2>
         <p className="content">Explore our showcase of recent web marvels, where innovation meets excellence. Be inspired by our diverse portfolio and envision the potential for your digital journey. Contact us to craft your masterpiece today</p>
-        <a href="tel:+918920152023"><div className={`body-wrapper justify-start ${styles.phoneWrapper}`}>
+        <a onClick={()=>{
+            gtag_report_conversion()
+           }}  href="tel:+918920152023"><div className={`body-wrapper justify-start ${styles.phoneWrapper}`}>
             <div className={`${styles.icon}`}>
                 <FaPhoneAlt />
             </div>
