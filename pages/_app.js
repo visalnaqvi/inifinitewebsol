@@ -12,7 +12,6 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
     <SessionProvider session={session}>
       <Head>
       <link rel="icon" href="/favicon.png" />
-      </Head>
       <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-11324889747"></Script>
 <Script id="analytics">
   {`window.dataLayer = window.dataLayer || [];
@@ -30,6 +29,8 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
   gtag('config', 'G-EFY1G1JC42');
 `}
 </Script>
+      </Head>
+
     <NavBar />
     <main>
       <Component {...pageProps} />
