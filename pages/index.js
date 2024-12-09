@@ -19,6 +19,10 @@ import TestimonialCard from "@/components/cards/testimonialCard/testimonialCard.
 import { useRouter } from "next/navigation.js"
 import VideoHero from "@/components/videoHero/videoHero.js"
 import Gallary from "@/components/gallary/gallary.js"
+import Badges from "@/components/badges/badge.js"
+import LoginComponent from "@/components/forms/login/login.js"
+
+
 export default function Home() {
 
 const size = useWindowSize();
@@ -44,7 +48,8 @@ function gtag_report_conversion(url) {
     </Head>
     
         <SingleImage url={[background , background_mb]} /> 
-      
+        <Badges />
+        <LoginComponent />
         <div className="margin">
           <div className="body-wrapper justify-between">
             <h2 className="subHeading">Our foundation</h2>
