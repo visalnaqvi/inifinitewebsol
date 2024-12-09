@@ -27,7 +27,7 @@ const VideoHero = ()=>{
             {marginTop:0}
         }>Inspiring Creations: Our Recent Web Marvels</h2>
         <p className="content">Explore our showcase of recent web marvels, where innovation meets excellence. Be inspired by our diverse portfolio and envision the potential for your digital journey. Contact us to craft your masterpiece today</p>
-        <a onclick="return gtag_report_conversion('tel:8920152023');"  href="tel:+918920152023"><div className={`body-wrapper justify-start ${styles.phoneWrapper}`}>
+        <a onclick={()=>{return gtag_report_conversion('tel:8920152023');}}  href="tel:+918920152023"><div className={`body-wrapper justify-start ${styles.phoneWrapper}`}>
             <div className={`${styles.icon}`}>
                 <FaPhoneAlt />
             </div>
