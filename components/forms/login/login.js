@@ -59,7 +59,7 @@ const LoginComponent = () => {
                         }
                         <div className={styles.formItem}>
                             <label className={styles.label} htmlFor="userId">Phone Number</label><br></br>
-                            <input onChange={(e) => setUserId(e.target.value)} className={styles.input} type="text" id="userId" name="userId" placeholder="Enter your userId" />
+                            <input onChange={(e) => setUserId(e.target.value)} className={styles.input} type="text" id="userId" name="userId" placeholder="Enter your phone number" />
                         </div>
                         {/* <div className={styles.formItem}>
                             <div className="body-wrapper justify-between"><label className={styles.label} htmlFor="password">Password</label><p style={{ cursor: "pointer" }} onClick={() => setShowPass(!showPass)} className={styles.content}>Show Password</p></div>
