@@ -27,7 +27,7 @@ const ContactBox = ()=>{
             <div className={styles.contactBoxSection}>
                 {/* <p><strong>OR CLASS US NOW ON</strong></p><br></br> */}
                 <div>
-                <Link onclick={()=>{gtag_report_conversion('tel:8920152023');}} href="tel:8920152023"><button>+91 8920152023</button></Link>
+                <button onclick={()=>{gtag_report_conversion('tel:8920152023');}}>+91 8920152023</button>
                 </div>
             </div>
         </div>

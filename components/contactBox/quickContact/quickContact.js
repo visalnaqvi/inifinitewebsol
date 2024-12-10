@@ -9,6 +9,7 @@ const QuickContacts = ()=>{
             window.location = url;
           }
         };
+        console.log("kllllll")
         gtag('event', 'conversion', {
             'send_to': 'AW-11324889747/WLMkCITlkaoZEJO1kJgq',
             'event_callback': callback
@@ -17,12 +18,12 @@ const QuickContacts = ()=>{
       }
     return(
         <div className={`body-wrapper justify-end ${styles.wrapper}`}>
-           <Link onclick={()=>{gtag_report_conversion('tel:8920152023');}} href="https://wa.me/+918920152023"><div className={`${styles.icon} ${styles.wa} body-wrapper`}>
+           <div onclick={()=>{gtag_report_conversion('https://wa.me/+918920152023');}} className={`${styles.icon} ${styles.wa} body-wrapper`}>
                 <BsWhatsapp />
-            </div></Link>
-            <Link onclick={()=>{gtag_report_conversion('tel:8920152023');}} href="tel:8920152023"><div className={`${styles.icon} ${styles.call} body-wrapper`}>
+            </div>
+            <div onclick={()=>{gtag_report_conversion('tel:8920152023');}} className={`${styles.icon} ${styles.call} body-wrapper`}>
                 <AiTwotonePhone />
-            </div></Link>
+            </div>
             {/* <Link href="tel:9205184001"><div className={`${styles.icon} ${styles.call} body-wrapper`}>
                 <BsFacebook />
             </div></Link> */}

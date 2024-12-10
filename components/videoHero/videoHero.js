@@ -27,12 +27,12 @@ const VideoHero = ()=>{
             {marginTop:0}
         }>Inspiring Creations: Our Recent Web Marvels</h2>
         <p className="content">Explore our showcase of recent web marvels, where innovation meets excellence. Be inspired by our diverse portfolio and envision the potential for your digital journey. Contact us to craft your masterpiece today</p>
-        <a onclick={()=>{gtag_report_conversion('tel:8920152023');}}  href="tel:+918920152023"><div className={`body-wrapper justify-start ${styles.phoneWrapper}`}>
-            <div className={`${styles.icon}`}>
+        <div onclick={()=>{gtag_report_conversion('tel:8920152023');}} className={`body-wrapper justify-start ${styles.phoneWrapper}`}>
+            <div onclick={()=>{gtag_report_conversion('tel:8920152023');}} className={`${styles.icon}`}>
                 <FaPhoneAlt />
             </div>
-            <p className={styles.phone}>Connect with us Now</p>
-        </div></a>
+            <p onclick={()=>{gtag_report_conversion('tel:8920152023');}} className={styles.phone}>Connect with us Now</p>
+        </div>
         <div className="body-wrapper justify-start">
             <button style={{marginTop:"20px",padding:"20px" , fontSize:"20px"}} className="primary-btn blue" onClick={()=>{router.push("/recentProjects")}}>Explore Recent Projects</button>
             </div>
