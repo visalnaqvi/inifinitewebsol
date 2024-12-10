@@ -18,10 +18,10 @@ const QuickContacts = ()=>{
       }
     return(
         <div className={`body-wrapper justify-end ${styles.wrapper}`}>
-           <div onclick={()=>{gtag_report_conversion('https://wa.me/+918920152023');}} className={`${styles.icon} ${styles.wa} body-wrapper`}>
+           <div onClick={()=>{gtag_report_conversion('https://wa.me/+918920152023');}} className={`${styles.icon} ${styles.wa} body-wrapper`}>
                 <BsWhatsapp />
             </div>
-            <div onclick={()=>{gtag_report_conversion('tel:8920152023');}} className={`${styles.icon} ${styles.call} body-wrapper`}>
+            <div onClick={()=>{gtag_report_conversion('tel:8920152023');}} className={`${styles.icon} ${styles.call} body-wrapper`}>
                 <AiTwotonePhone />
             </div>
             {/* <Link href="tel:9205184001"><div className={`${styles.icon} ${styles.call} body-wrapper`}>

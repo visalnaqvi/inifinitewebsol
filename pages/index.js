@@ -53,7 +53,7 @@ function gtag_report_conversion(url) {
         <div className="margin">
           <div className="body-wrapper justify-between">
             <h2 className="subHeading">Our foundation</h2>
-            <button onclick={()=>{gtag_report_conversion('tel:8920152023');}} className="primary-btn blue">Contact Us On: +918920152023</button>
+            <button onClick={()=>{gtag_report_conversion('tel:8920152023');}} className="primary-btn blue" style={{marginBottom:"20px"}}>Contact Us On: +918920152023</button>
           </div>
           
             <p className="content">At InfiniteWeb Solutions, we believe in the power of limitless creativity and innovation to shape the digital landscape. Our foundation is built on a commitment to excellence, integrity, and client satisfaction. We are dedicated to crafting immersive web experiences that transcend expectations, empowering businesses to thrive in the digital realm. With a team of passionate experts, we harness the latest technologies and design trends to unlock infinite possibilities for our clients. From concept to execution, we are your partners in success, providing tailored solutions that elevate your online presence and drive measurable results. Welcome to a world of endless opportunities with InfiniteWeb Solutions.</p>
