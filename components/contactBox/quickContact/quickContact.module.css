@@ -4,8 +4,8 @@
     padding-right: 20px;
     position: fixed;
     bottom: 10px;
-    width: 300px;
-    right: 20px;
+    width: 180px;
+    right: 0px;
     pointer-events: none;
 }
 
@@ -20,11 +20,9 @@
 }
 
 .wa{
-    margin-right: 10px;
     background-color: var(--light-green);
 }
 
 .call{
-    margin-right: 10px;
     background-color: var(--primary-blue);
 }

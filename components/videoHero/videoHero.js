@@ -15,7 +15,7 @@ const VideoHero = ()=>{
           }
         };
         gtag('event', 'conversion', {
-            'send_to': 'AW-11324889747/WLMkCITlkaoZEJO1kJgq',
+            'send_to': 'AW-11324889747/LontCNe3i_UZEJO1kJgq',
             'event_callback': callback
         });
         return false;
@@ -28,10 +28,10 @@ const VideoHero = ()=>{
         }>Inspiring Creations: Our Recent Web Marvels</h2>
         <p className="content">Explore our showcase of recent web marvels, where innovation meets excellence. Be inspired by our diverse portfolio and envision the potential for your digital journey. Contact us to craft your masterpiece today</p>
         <div onClick={()=>{gtag_report_conversion('tel:8920152023');}} className={`body-wrapper justify-start ${styles.phoneWrapper}`}>
-            <div onClick={()=>{gtag_report_conversion('tel:8920152023');}} className={`${styles.icon}`}>
+            <div className={`${styles.icon}`}>
                 <FaPhoneAlt />
             </div>
-            <p onClick={()=>{gtag_report_conversion('tel:8920152023');}} className={styles.phone}>Connect with us Now</p>
+            <p className={styles.phone}>Connect with us Now</p>
         </div>
         <div className="body-wrapper justify-start">
             <button style={{marginTop:"20px",padding:"20px" , fontSize:"20px"}} className="primary-btn blue" onClick={()=>{router.push("/recentProjects")}}>Explore Recent Projects</button>

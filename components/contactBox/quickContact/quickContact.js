@@ -9,9 +9,8 @@ const QuickContacts = ()=>{
             window.location = url;
           }
         };
-        console.log("kllllll")
         gtag('event', 'conversion', {
-            'send_to': 'AW-11324889747/WLMkCITlkaoZEJO1kJgq',
+            'send_to': 'AW-11324889747/LontCNe3i_UZEJO1kJgq',
             'event_callback': callback
         });
         return false;
