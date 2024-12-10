@@ -27,7 +27,7 @@ const LoginComponent = () => {
     const onRegister = async () => {
         try{
             setIsLoading(true)
-            await addUser({ name: name, userId: userId, password: password, role: "customer" })
+            await addUser({ name: name, userId: userId, password: password, role: "customer",time:new Date().toLocaleString()})
             setIsLoading(false)
             setSuccess(true)
             router.push("/thankyou")
