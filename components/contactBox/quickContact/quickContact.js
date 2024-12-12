@@ -2,7 +2,9 @@ import styles from "./quickContact.module.css"
 import {BsWhatsapp} from "react-icons/bs"
 import {AiTwotonePhone} from "react-icons/ai"
 import Link from "next/link"
+import { useRouter } from "next/navigation"
 const QuickContacts = ()=>{
+    const router = useRouter()
     function gtag_report_conversion(url) {
         var callback = function () {
           if (typeof(url) != 'undefined') {
@@ -17,7 +19,7 @@ const QuickContacts = ()=>{
       }
     return(
         <div className={`body-wrapper justify-end ${styles.wrapper}`}>
-           <div onClick={()=>{gtag_report_conversion('https://wa.me/+918920152023');}} className={`${styles.icon} ${styles.wa} body-wrapper`}>
+           <div onClick={()=>{router.push("/wa")}} className={`${styles.icon} ${styles.wa} body-wrapper`}>
                 <BsWhatsapp />
             </div>
             <div onClick={()=>{gtag_report_conversion('tel:8920152023');}} className={`${styles.icon} ${styles.call} body-wrapper`}>
