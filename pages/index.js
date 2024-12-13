@@ -49,7 +49,6 @@ function gtag_report_conversion(url) {
       </Head>
        
         <SingleImage url={[background , background_mb]} /> 
-        <Badges />
         <LoginComponent />
         <div className="margin">
           <div className="body-wrapper justify-between">
@@ -63,8 +62,10 @@ function gtag_report_conversion(url) {
             <button className="primary-btn blue" onClick={()=>{router.push("/contact-form")}} style={{marginRight:"10px"}}>Request a Callback</button>
             </div>
             <div style={{position:"relative", width:"100%", height:`${size.width<800?"200px":"600px"}`}}>
-            <Image onClick={()=>{router.push("/contact-form")}} src={longBanner} fill={true} style={{objectFit:"contain"}} alt="some"/>
+            <Image onClick={()=>{router.push("/contact-form")}} src={longBanner} fill={true} style={{objectFit:"contain"}} alt="team of professionals doing S.E.O"/>
           </div>
+          <Badges />
+
          <VideoHero />
           <h2 className="boldHeading center">Our Services</h2>
           <div className="body-wrapper">

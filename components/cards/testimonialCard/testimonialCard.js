@@ -4,7 +4,7 @@ const TestimonialCard = ({data})=>{
     return (
         <div className={styles.cardBody}>
             <div className="body-wrapper justify-start">
-                <div className={styles.cardImg}><Image objectFit="cover" fill={true} src={data.img} alt="some"></Image></div>
+                <div className={styles.cardImg}><Image objectFit="cover" fill={true} src={data.img} alt="man"></Image></div>
                 <div className={styles.headerContent}>
                     <p className={styles.headerHeading}>{data.name}</p>
                     <p className={styles.headerTag}>⭐⭐⭐⭐⭐</p>

@@ -8,6 +8,7 @@ const data =
 		column2:[],
 		button:"Contact Us",
 		direction:["row","column"],
+		alt:"team of professional developing website"
 	},
 	{
 		heading:"Website Maintenance & Support",
@@ -17,6 +18,8 @@ const data =
 		column2:[],
 		button:"Contact Us",
 		direction:["row-reverse","column"],
+		alt:"team of professional maintaining website"
+
 	},
 	// {
 	// 	heading:"Office Space Planning & Fit-Outs",

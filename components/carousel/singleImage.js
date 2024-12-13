@@ -8,15 +8,22 @@ const SingleImage = ({url})=>{
     const router = useRouter()
 
     return(
-       <>{size.width && <div className="backgroundImgWrapper">
-         <div className={styles.hiddenDiv}> 
-          <h1>Empowering Your Digital Presence with Innovative Solutions</h1>
+       <>{size.width && 
+       <div onClick={()=>{router.push("/contact-form")}} className="backgroundImgWrapper">
+         
+            {size.width>615 ? <Image className="backgroundImg" fill={false} height={660} style={{objectFit: "cover" , objectPosition:"left"}} src={url[0]} alt="a man doing digital marketing" />
+            :<div className={styles.hiddenDiv}> 
+          <div  className={styles.shade}></div>
+          <div className={styles.content}>
+          <h1 className={styles.heading}>Empowering Your Digital Presence with Innovative Solutions</h1>
+          <p className={styles.p}>Call Us Now: +918920152023</p>
+          <button className={styles.btn}>Request A Callback</button>
+          </div>
           <br></br>
-          <p>We provide comprehensive solutions in digital marketing, web development, web app development, SEO, and SMO. Our mission is to help businesses grow by creating user-friendly websites, innovative applications, and result-driven marketing strategies. Together, let&apos;s build a stronger, smarter digital presence for your brand.</p>
-        </div>
-            {size.width>615 ? <Image onClick={()=>{router.push("/contact-form")}} className="backgroundImg" fill={false} height={660} style={{objectFit: "cover" , objectPosition:"left"}} src={url[0]} alt="iraq ziyarat packages" />
-            :<Image onClick={()=>{router.push("/contact-form")}} className="backgroundImg" height={400} style={{objectFit: "cover" , objectPosition:"left"}} src={url[1]} alt="iraq ziyarat packages" />}
-            </div>   }  </>     
+        </div>}
+            </div>   
+          }  
+        </>     
     )
 }
 

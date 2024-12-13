@@ -9,19 +9,19 @@ const Badges = () => {
     return (
         <div style={{backgroundColor:"var(--background-blue)" , padding:"20px 10px" , marginTop:"20px" , borderRadius:"10px"}} className="body-wrapper justify-center">
           <div style={{margin:"10px"}}>
-            <Image src={dm} width={150}></Image>
+            <Image src={dm} width={150} alt="digital marketing"></Image>
           </div>
           <div style={{margin:"10px"}}>
-            <Image src={web} width={150}></Image>
+            <Image src={web} width={150} alt="websites"></Image>
           </div>
           <div style={{margin:"10px"}}>
-            <Image src={ss} width={150}></Image>
+            <Image src={ss} width={150} alt="software solutions"></Image>
           </div>
           <div style={{margin:"10px"}}>
-            <Image src={seo} width={150}></Image>
+            <Image src={seo} width={150} alt="S.E.O"></Image>
           </div>
           <div style={{margin:"10px"}}>
-            <Image src={smo} width={150}></Image>
+            <Image src={smo} width={150} alt="S.M.O"></Image>
           </div>
         </div>
     )

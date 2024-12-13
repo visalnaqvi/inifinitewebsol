@@ -48,8 +48,8 @@ function gtag_report_conversion(url) {
         <meta name="description" content="We specialize in delivering cutting-edge digital marketing, web development, web app development, SEO, and SMO services to help businesses thrive in the digital landscape. Our expert team is dedicated to crafting custom strategies that boost visibility, drive engagement, and achieve measurable results. Let us transform your online vision into reality."></meta>
       </Head>
        
-        {/* <SingleImage url={[background , background_mb]} />  */}
-        {/* <Badges /> */}
+        <SingleImage url={[background , background_mb]} /> 
+        <Badges />
         <LoginComponent />
         <div className="margin">
           <div className="body-wrapper justify-between">
