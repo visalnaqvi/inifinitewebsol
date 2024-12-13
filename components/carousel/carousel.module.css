@@ -48,7 +48,7 @@
     overflow: hidden;
     z-index: -1;
     height: 300px;
-    background-image: url(../../public/sliders/homePageSlider/mobile/slider_1_mb.webp);
+    background-image: url(/sliders/homePageSlider/mobile/slider_1_mb.webp?v=1);
 }
 
 .shade{
@@ -94,7 +94,7 @@
 
 @media only screen and (min-width:615px){
     .hiddenDiv{
-        background-image: url(../../public/sliders/homePageSlider/desktop/slider_1.webp);
+        background-image: url(/sliders/homePageSlider/desktop/slider_1.webp?v=1);
         height: 100vh;
         background-size: contain;
         background-repeat: no-repeat;

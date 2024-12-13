@@ -6,10 +6,10 @@ import features from "../data/features.js"
 // import heroVideo2 from "../public/gallary/hero2.mp4"
 import testi from "../data/testimonials.js"
 import Map from "../components/map/map.js"
-import longBanner from "../public/backgroundImages/long_banner.webp"
+import longBanner from "../public/backgroundImages/long_banner.webp?v=1"
 import SingleImage from "../components/carousel/singleImage.js"
-import background from "../public/sliders/homePageSlider/desktop/slider_1.webp"
-import background_mb from "../public/sliders/homePageSlider/mobile/slider_1_mb.webp"
+import background from "../public/sliders/homePageSlider/desktop/slider_1.webp?v=1"
+import background_mb from "../public/sliders/homePageSlider/mobile/slider_1_mb.webp?v=1"
 import { useWindowSize } from "@uidotdev/usehooks";
 import Head from "next/head.js"
 import Image from "next/image.js"
@@ -46,6 +46,8 @@ function gtag_report_conversion(url) {
        <Head>
         <title>Best Digital Marketing and Website Company</title>
         <meta name="description" content="We specialize in delivering cutting-edge digital marketing, web development, web app development, SEO, and SMO services to help businesses thrive in the digital landscape. Our expert team is dedicated to crafting custom strategies that boost visibility, drive engagement, and achieve measurable results. Let us transform your online vision into reality."></meta>
+        <link rel="preload" href="/sliders/homePageSlider/desktop/slider_1.webp" as="image" />
+        <link rel="preload" href="/sliders/homePageSlider/mobile/slider_1_mb.webp" as="image" />
       </Head>
        
         <SingleImage url={[background , background_mb]} /> 
