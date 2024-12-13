@@ -8,7 +8,7 @@ import { useWindowSize } from "@uidotdev/usehooks";
 const NavBar = () => {
 
     const router = useRouter()
-    const [isVisible , setIsVisible] = useState(true);
+    const [isVisible , setIsVisible] = useState(false);
     const size = useWindowSize();
 
     useEffect(()=>{
@@ -16,8 +16,8 @@ const NavBar = () => {
     },[size])
 
     const mbNav = ()=>{
-        if(size.width<1040){
-            setIsVisible(false);
+        if(size.width>1040){
+            setIsVisible(true);
         }
     }
 
