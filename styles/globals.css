@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap'); */
 
 body{
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 main{
@@ -27,7 +28,7 @@ main{
     --light-green:#00c981;
     --dark-green:#00665a;
     --background-blue:#f2f2f2;
-    --primary-blue:#2192ff;
+    --primary-blue:#213f5a;
     --primary-blue-light:#e1f2ff;
 }
 

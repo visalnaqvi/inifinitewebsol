@@ -42,7 +42,7 @@ const VideoHero = ()=>{
         }} className={styles.column}>
             {/* {size.width && size.width >500 ?<Image src={stargate} style={{objectFit:"contain" , borderRadius:"10px" , boxShadow:"0px 10px 20px #00000040"}} width={"500"} alt="something" />:
             <Image src={stargate} style={{objectFit:"contain" , borderRadius:"10px" , boxShadow:"0px 10px 20px #00000040"}} width={"300"} alt="something" />} */}
-            <div style={{position:"relative", width:"100%" , height:"500px"}}>
+            <div style={{position:"relative", width:"100%" , height:"500px"  , boxShadow:"10px 10px 15px #00000070"}}>
             <Image src={stargate} fill={true} style={{objectFit:"contain"}} alt="something" />
             </div>
             <p className="subHeading center">Stargate Education</p>
