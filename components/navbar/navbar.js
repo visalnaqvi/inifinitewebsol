@@ -46,7 +46,7 @@ const NavBar = () => {
                 <div className={`${styles.w20} body-wrapper`}>
                     
                    
-                <button onClick={()=>{router.push("/login")}} className="primary-btn blue" style={{ marginTop: "0" , fontSize:"12px" }}>Get Callback</button>
+                <button onClick={()=>{router.push("/contact-form")}} className="primary-btn blue" style={{ marginTop: "0" , fontSize:"12px" }}>Get Callback</button>
 
                    
                 </div>

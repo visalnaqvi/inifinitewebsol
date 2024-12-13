@@ -6,10 +6,10 @@ import features from "../data/features.js"
 // import heroVideo2 from "../public/gallary/hero2.mp4"
 import testi from "../data/testimonials.js"
 import Map from "../components/map/map.js"
-import longBanner from "../public/backgroundImages/long_banner.jpg"
+import longBanner from "../public/backgroundImages/long_banner.webp"
 import SingleImage from "../components/carousel/singleImage.js"
-import background from "../public/sliders/homePageSlider/desktop/slider_1.png"
-import background_mb from "../public/sliders/homePageSlider/mobile/slider_1_mb.png"
+import background from "../public/sliders/homePageSlider/desktop/slider_1.webp"
+import background_mb from "../public/sliders/homePageSlider/mobile/slider_1_mb.webp"
 import { useWindowSize } from "@uidotdev/usehooks";
 import Head from "next/head.js"
 import Image from "next/image.js"
@@ -44,9 +44,10 @@ function gtag_report_conversion(url) {
    
     <div>
        <Head>
-      <title>Webiste and Web Apps Service in Noida</title>
-    </Head>
-    
+        <title>Best Digital Marketing and Website Company</title>
+        <meta name="description" content="We specialize in delivering cutting-edge digital marketing, web development, web app development, SEO, and SMO services to help businesses thrive in the digital landscape. Our expert team is dedicated to crafting custom strategies that boost visibility, drive engagement, and achieve measurable results. Let us transform your online vision into reality."></meta>
+      </Head>
+       
         <SingleImage url={[background , background_mb]} /> 
         <Badges />
         <LoginComponent />
@@ -56,13 +57,13 @@ function gtag_report_conversion(url) {
             <button onClick={()=>{gtag_report_conversion('tel:8920152023');}} className="primary-btn blue" style={{marginBottom:"20px"}}>Contact Us On: +918920152023</button>
           </div>
           
-            <p className="content">At InfiniteWeb Solutions, we believe in the power of limitless creativity and innovation to shape the digital landscape. Our foundation is built on a commitment to excellence, integrity, and client satisfaction. We are dedicated to crafting immersive web experiences that transcend expectations, empowering businesses to thrive in the digital realm. With a team of passionate experts, we harness the latest technologies and design trends to unlock infinite possibilities for our clients. From concept to execution, we are your partners in success, providing tailored solutions that elevate your online presence and drive measurable results. Welcome to a world of endless opportunities with InfiniteWeb Solutions.</p>
+            <p className="content">At InfiniteWeb Solutions, We specialize in delivering cutting-edge <strong>digital marketing, web development, web app development, SEO, and SMO services </strong>to help businesses thrive in the digital landscape. Our expert team is dedicated to crafting custom strategies that <strong>boost visibility, drive engagement, and achieve measurable results</strong>. Let us transform your online vision into reality.</p>
            <div className="body-wrapper justify-start">
             <button className="primary-btn blue" onClick={()=>{router.push("/recentProjects")}} style={{marginRight:"10px"}}>Explore Recent Projects</button>
-            <button className="primary-btn blue" onClick={()=>{router.push("/login")}} style={{marginRight:"10px"}}>Request a Callback</button>
+            <button className="primary-btn blue" onClick={()=>{router.push("/contact-form")}} style={{marginRight:"10px"}}>Request a Callback</button>
             </div>
             <div style={{position:"relative", width:"100%", height:`${size.width<800?"200px":"600px"}`}}>
-            <Image onClick={()=>{router.push("/login")}} src={longBanner} fill={true} style={{objectFit:"contain"}} alt="some"/>
+            <Image onClick={()=>{router.push("/contact-form")}} src={longBanner} fill={true} style={{objectFit:"contain"}} alt="some"/>
           </div>
          <VideoHero />
           <h2 className="boldHeading center">Our Services</h2>

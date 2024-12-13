@@ -38,3 +38,17 @@
     font-weight: 600;
 }
 
+.hiddenDiv{
+    position: absolute;
+    height: 300px;
+    width: 100%;
+    background-image:linear-gradient(90deg,var(--primary-blue),#10599e);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    color: #fff;
+    border-radius: 20px;
+    z-index: -1;
+}

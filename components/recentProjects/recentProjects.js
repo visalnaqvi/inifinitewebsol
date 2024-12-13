@@ -2,15 +2,15 @@ import ContactCard from "../cards/contactcard/ContactCard.js";
 import Gallary from "../gallary/gallary.js";
 import Map from "../map/map.js";
 import styles from "./recentProjects.module.css"
-import agecourses from "../../public/gallary/agecourses.png"
-import alazeem from "../../public/gallary/alazeem.png"
-import dhyeyaias from "../../public/gallary/dhyeyaias.png"
-import jshah from "../../public/gallary/jshah.png"
-import electropack from "../../public/gallary/electropack.png"
-import marvelsuperhero from "../../public/gallary/marvelsuperhero.png"
-import nninteriors from "../../public/gallary/nninteriors.png"
-import portfolio from "../../public/gallary/portfolio.png"
-import stargate from "../../public/gallary/stargate_sq.png"
+import agecourses from "../../public/gallary/agecourses.webp"
+import alazeem from "../../public/gallary/alazeem.webp"
+import dhyeyaias from "../../public/gallary/dhyeyaias.webp"
+import jshah from "../../public/gallary/jshah.webp"
+import electropack from "../../public/gallary/electropack.webp"
+import marvelsuperhero from "../../public/gallary/marvelsuperhero.webp"
+import nninteriors from "../../public/gallary/nninteriors.webp"
+import portfolio from "../../public/gallary/portfolio.webp"
+import stargate from "../../public/gallary/stargate_sq.webp"
 const InteriorProjects = () => {
     const gallaryData = [{
         src:agecourses,

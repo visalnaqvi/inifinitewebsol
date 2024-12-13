@@ -1,7 +1,7 @@
 import SingleImage from "../components/carousel/singleImage.js"
 import Head from "next/head.js"
-import background from "../public/sliders/homePageSlider/desktop/slider_1.png"
-import background_mb from "../public/sliders/homePageSlider/mobile/slider_1_mb.png"
+import background from "../public/sliders/homePageSlider/desktop/slider_1.webp"
+import background_mb from "../public/sliders/homePageSlider/mobile/slider_1_mb.webp"
 
 const ThankYou = ()=>{
     return(

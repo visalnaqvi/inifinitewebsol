@@ -3,7 +3,7 @@ import { FaPhoneAlt } from "react-icons/fa"
 import { useRouter } from "next/navigation"
 import { useWindowSize } from "@uidotdev/usehooks";
 
-import stargate from "../../public/gallary/stargate.png"
+import stargate from "../../public/gallary/stargate.webp"
 import Image from "next/image"
 const VideoHero = ()=>{
     const router = useRouter()

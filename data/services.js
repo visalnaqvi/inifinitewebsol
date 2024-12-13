@@ -3,7 +3,7 @@ const data =
 	{
 		heading:"Web Design & Development Services",
 		content:"From concept to completion, we specialize in building custom homes tailored to your unique vision and lifestyle preferences. Our experienced team ensures that every aspect of your dream home is meticulously crafted with the highest standards of quality and attention to detail.",
-		img:"/services/visa.jpg",
+		img:"/services/visa.webp",
 		column1:["Web Design & Development" , "E-commerce Solutions", "Responsive Design" , "Content Management Systems (CMS)"],
 		column2:[],
 		button:"Contact Us",
@@ -12,7 +12,7 @@ const data =
 	{
 		heading:"Website Maintenance & Support",
 		content:"Transform your space into a reflection of your personality and taste with our expert interior design and renovation services. Whether it's a residential or commercial property, we collaborate closely with you to create functional and aesthetically pleasing interiors that enhance comfort, productivity, and overall satisfaction.",
-		img:"/services/passport.jpg",
+		img:"/services/passport.webp",
 		column1:["Website Maintenance & Support" , "Website Hosting & Domain Services", "Website Audits & Optimization" , "UI/UX Design"],
 		column2:[],
 		button:"Contact Us",

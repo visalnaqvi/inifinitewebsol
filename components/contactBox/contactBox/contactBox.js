@@ -21,7 +21,7 @@ const ContactBox = ()=>{
                 <h3 style={{marginTop:0}} className="subHeading">Contact Us for more information</h3>
                 <p style={{color:"white"}} className="content">Have questions or ready to start your project? Contact us today for personalized assistance and expert guidance. We&apos;re here to help you turn your vision into reality.</p>
                 {/* <p style={{color:"white"}} className="content"><strong>Email: aatravels1170@gmail.com</strong></p> */}
-                <button onClick={()=>{router.push("/login")}}>Request a Callback</button>
+                <button onClick={()=>{router.push("/contact-form")}}>Request a Callback</button>
 
             </div>
             <div className={styles.contactBoxSection}>
