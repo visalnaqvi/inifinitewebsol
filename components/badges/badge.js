@@ -1,8 +1,8 @@
-import dm from "../../public/services/DM.webp?v=1"
-import seo from "../../public/services/SEO.webp?v=1"
-import smo from "../../public/services/SMO.webp?v=1"
-import ss from "../../public/services/SS.webp?v=1"
-import web from "../../public/services/WEB.webp?v=1"
+import dm from "../../public/services/DM.webp"
+import seo from "../../public/services/SEO.webp"
+import smo from "../../public/services/SMO.webp"
+import ss from "../../public/services/SS.webp"
+import web from "../../public/services/WEB.webp"
 import Image from "next/image.js"
 
 const Badges = () => {
