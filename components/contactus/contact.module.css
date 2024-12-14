@@ -46,4 +46,8 @@
     .slide{
       height: 40vh;
     }
+
+    .contactus{
+      background-image: url(../../public/backgroundImages/contactpage_mb.webp);
+    }
   }
