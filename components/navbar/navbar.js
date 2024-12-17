@@ -8,18 +8,12 @@ import { useWindowSize } from "@uidotdev/usehooks";
 const NavBar = () => {
 
     const router = useRouter()
-    const [isVisible , setIsVisible] = useState(false);
+    const [isVisible , setIsVisible] = useState(true);
     const size = useWindowSize();
 
     useEffect(()=>{
         setIsVisible(size.width>=1040)
     },[size])
-
-    const mbNav = ()=>{
-        if(size.width>1040){
-            setIsVisible(true);
-        }
-    }
 
     return (
         <div>
@@ -33,15 +27,15 @@ const NavBar = () => {
                 <Image src={logo} width={120} style={{objectFit:"contain"}} alt="al azeem logo" />}
                <div className={`${styles.mainMenu} ${!isVisible && styles.notVisible}`}>
                     <ul className="body-wrapper">
-                    <li onClick={()=>{mbNav()
+                    <li onClick={()=>{
                         router.push("/")}}>Home</li>
-                    <li className={styles.pointer} onClick={()=>{mbNav()
+                    <li className={styles.pointer} onClick={()=>{
                     router.push("/recentProjects")}}>Recent Projects</li>
-                    <li onClick={()=>{mbNav()
+                    <li onClick={()=>{
                         router.push("/contactus")}}>Contact Us</li>
-                    <li onClick={()=>{mbNav()
+                    <li onClick={()=>{
                         router.push("/aboutUs")}}>About Us</li>
-                    <li className={styles.pointer} onClick={()=>{mbNav()
+                    <li className={styles.pointer} onClick={()=>{
                     router.push("/blogs")}}>Blogs</li>
                     </ul>
                 </div>
