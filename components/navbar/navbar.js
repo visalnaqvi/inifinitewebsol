@@ -41,6 +41,8 @@ const NavBar = () => {
                         router.push("/contactus")}}>Contact Us</li>
                     <li onClick={()=>{mbNav()
                         router.push("/aboutUs")}}>About Us</li>
+                    <li className={styles.pointer} onClick={()=>{mbNav()
+                    router.push("/blogs")}}>Blogs</li>
                     </ul>
                 </div>
                 <div className={`${styles.w20} body-wrapper`}>

@@ -38,7 +38,7 @@ const ImageCard = ({data})=>{
                 </div>}
 
                 {
-                    data.button && <><br></br><buttton onClick={()=>{router.push("/contact-form")}} className="primary-btn blue">{data.button}</buttton></>
+                    data.button && <><br></br><buttton onClick={()=>{data.link?router.push(data.link):router.push("/contact-form")}} className="primary-btn blue">{data.button}</buttton></>
                 }
             </div>
         </div>

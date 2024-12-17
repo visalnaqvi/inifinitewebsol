@@ -1,0 +1,15 @@
+.heading , .subHeading{
+    color: var(--primary-blue);
+    margin: 25px 0;
+}
+
+.content{
+    line-height: 35px;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+.list li{
+    margin: 20px 0;
+    line-height: 25px;
+}
