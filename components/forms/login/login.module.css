@@ -70,3 +70,11 @@
     font-size: 2.5rem;
     color: var(--primary-blue);
 }
+
+.error{
+    color: #dc143c;
+    padding: 5px;
+    background-color: #dc143c40;
+    margin-top: 5px;
+    border-radius: 3px;
+}
