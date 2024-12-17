@@ -3,6 +3,7 @@ import styles from './imageCard.module.css'
 import { useWindowSize } from "@uidotdev/usehooks";
 import { FaCheckCircle } from "react-icons/fa";
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 const ImageCard = ({data})=>{
     const router = useRouter();
     const size = useWindowSize();
@@ -38,7 +39,7 @@ const ImageCard = ({data})=>{
                 </div>}
 
                 {
-                    data.button && <><br></br><buttton onClick={()=>{data.link?router.push(data.link):router.push("/contact-form")}} className="primary-btn blue">{data.button}</buttton></>
+                    data.button && <><br></br><Link href={data.link?data.link:"/contact-form"}><buttton className="primary-btn blue">{data.button}</buttton></Link></>
                 }
             </div>
         </div>
