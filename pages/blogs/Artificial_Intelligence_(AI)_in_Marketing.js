@@ -134,7 +134,7 @@ const AIInMarketingBlog = () => {
                     <strong>Voice Search Optimization:</strong> With the rise of voice assistants like Alexa and Siri, optimizing for voice search will become a priority.
                 </li>
                 <li>
-                    <strong>Augmented Reality (AR):</strong> AI-driven AR experiences will allow customers to "try before they buy," revolutionizing e-commerce.
+                    <strong>Augmented Reality (AR):</strong> AI-driven AR experiences will allow customers to &quot;try before they buy,&quot; revolutionizing e-commerce.
                 </li>
             </ul>
 
