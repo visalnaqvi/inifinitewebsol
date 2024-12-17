@@ -5,6 +5,7 @@ import { GiHamburgerMenu , GiCancel } from "react-icons/gi"
 import { useEffect, useState } from "react"
 import { useRouter } from "next/navigation"
 import { useWindowSize } from "@uidotdev/usehooks";
+import Link from "next/link"
 const NavBar = () => {
 
     const router = useRouter()
@@ -27,16 +28,11 @@ const NavBar = () => {
                 <Image src={logo} width={120} style={{objectFit:"contain"}} alt="al azeem logo" />}
                <div className={`${styles.mainMenu} ${!isVisible && styles.notVisible}`}>
                     <ul className="body-wrapper">
-                    <li onClick={()=>{
-                        router.push("/")}}>Home</li>
-                    <li className={styles.pointer} onClick={()=>{
-                    router.push("/recentProjects")}}>Recent Projects</li>
-                    <li onClick={()=>{
-                        router.push("/contactus")}}>Contact Us</li>
-                    <li onClick={()=>{
-                        router.push("/aboutUs")}}>About Us</li>
-                    <li className={styles.pointer} onClick={()=>{
-                    router.push("/blogs")}}>Blogs</li>
+                    <li><Link href={"/"}>Home</Link></li>
+                    <li className={styles.pointer}><Link href={"/recentProjects"}>Recent Projects</Link></li>
+                    <li><Link href={"/contactus"}>Contact Us</Link></li>
+                    <li><Link href={"/aboutUs"}>About Us</Link></li>
+                    <li className={styles.pointer}><Link href={"/blogs"}>Blogs</Link></li>
                     </ul>
                 </div>
                 <div className={`${styles.w20} body-wrapper`}>
