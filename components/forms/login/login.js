@@ -31,6 +31,9 @@ const LoginComponent = () => {
         if (isRegister && !serviceRequired) {
             newErrors.serviceRequired = "Please select a service.";
         }
+        if (hasWebsite === null) {
+            newErrors.hasWebsite = "Please select if you have a website.";
+        }
         if (hasWebsite === "yes" && !websiteLink.trim()) {
             newErrors.websiteLink = "Website link is required.";
         } else if (hasWebsite === "yes" && !/^https?:\/\/\S+$/.test(websiteLink)) {
@@ -39,6 +42,7 @@ const LoginComponent = () => {
         setErrors(newErrors);
         return Object.keys(newErrors).length === 0;
     };
+    
 
     const onLogin = async () => {
         if (!validateForm()) return;
@@ -54,24 +58,28 @@ const LoginComponent = () => {
     const onRegister = async () => {
         if (!validateForm()) return;
 
-        try {
-            setIsLoading(true);
-            await addUser({ 
-                name, 
-                userId, 
-                password, 
-                serviceRequired,
-                hasWebsite,
-                websiteLink,
-                role: "customer", 
-                time: new Date().toLocaleString() 
-            });
-            setIsLoading(false);
-            setSuccess(true);
-            router.push("/thankyou");
-        } catch (e) {
-            console.log(e);
-        }
+    try {
+        setIsLoading(true);
+        const currentPageUrl = window.location.href; // Get the current page's full URL
+
+        await addUser({ 
+            name, 
+            userId, 
+            password, 
+            serviceRequired,
+            hasWebsite,
+            websiteLink,
+            pageUrl: currentPageUrl, // Add the page's URL
+            role: "customer", 
+            time: new Date().toLocaleString() 
+        });
+
+        setIsLoading(false);
+        setSuccess(true);
+        router.push("/thankyou");
+    } catch (e) {
+        console.log(e);
+    }
     };
 
     return (
@@ -100,6 +108,18 @@ const LoginComponent = () => {
                                     {errors.name && <p className={styles.error}>{errors.name}</p>}
                                 </div>
                                 <div className={styles.formItem}>
+                            <label className={styles.label} htmlFor="userId">Phone Number</label><br />
+                            <input
+                                onChange={(e) => setUserId(e.target.value)}
+                                className={styles.input}
+                                type="text"
+                                id="userId"
+                                name="userId"
+                                placeholder="Enter your phone number"
+                            />
+                            {errors.userId && <p className={styles.error}>{errors.userId}</p>}
+                        </div>
+                                <div className={styles.formItem}>
                                     <label className={styles.label} htmlFor="serviceRequired">Service Required</label><br />
                                     <select
                                         onChange={(e) => setServiceRequired(e.target.value)}
@@ -116,29 +136,29 @@ const LoginComponent = () => {
                                     {errors.serviceRequired && <p className={styles.error}>{errors.serviceRequired}</p>}
                                 </div>
                                 <div className={styles.formItem}>
-                                    <label className={styles.label}>Do you have a website?</label><br />
-                                    <br />
-                                    <label className={styles.radio}>
-                                        <input
-                                            type="radio"
-                                            name="hasWebsite"
-                                            value="yes"
-                                            onChange={(e) => setHasWebsite(e.target.value)}
-                                        /> Yes
-                                    </label>
-                                    <label className={styles.radio}>
-                                        <input
-                                            type="radio"
-                                            name="hasWebsite"
-                                            value="no"
-                                            onChange={(e) => {
-                                                setHasWebsite(e.target.value);
-                                                setWebsiteLink("");
-                                            }}
-                                        /> No
-                                    </label>
-                                    {errors.hasWebsite && <p className={styles.error}>{errors.hasWebsite}</p>}
-                                </div>
+    <label className={styles.label}>Do you have a website?</label><br />
+    <br />
+    <label className={styles.radio}>
+        <input
+            type="radio"
+            name="hasWebsite"
+            value="yes"
+            onChange={(e) => setHasWebsite(e.target.value)}
+        /> Yes
+    </label>
+    <label className={styles.radio}>
+        <input
+            type="radio"
+            name="hasWebsite"
+            value="no"
+            onChange={(e) => {
+                setHasWebsite(e.target.value);
+                setWebsiteLink("");
+            }}
+        /> No
+    </label>
+    {errors.hasWebsite && <p className={styles.error}>{errors.hasWebsite}</p>}
+</div>
                                 {hasWebsite === "yes" && (
                                     <div className={styles.formItem}>
                                         <label className={styles.label} htmlFor="websiteLink">Website Link</label><br />
@@ -155,18 +175,7 @@ const LoginComponent = () => {
                                 )}
                             </>
                         )}
-                        <div className={styles.formItem}>
-                            <label className={styles.label} htmlFor="userId">Phone Number</label><br />
-                            <input
-                                onChange={(e) => setUserId(e.target.value)}
-                                className={styles.input}
-                                type="text"
-                                id="userId"
-                                name="userId"
-                                placeholder="Enter your phone number"
-                            />
-                            {errors.userId && <p className={styles.error}>{errors.userId}</p>}
-                        </div>
+                        
                         {!isLoading ? (
                             <button
                                 onClick={(e) => {
