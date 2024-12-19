@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./blog.module.css";
-import img from "../../public/blogs/Artificial_Intelligence_(AI)_in_Marketing.webp"
+import img from "../../public/blogs/Artificial_Intelligence_AI_in_Marketing.webp"
 import BlogImage from "@/components/blogImg/image";
 import Head from "next/head";
 const AIInMarketingBlog = () => {
