@@ -10,17 +10,16 @@ const AIInMarketingBlog = () => {
     <title>Artificial Intelligence (AI) in Marketing</title>
   <meta name="description" content="Learn how to make images responsive in Next.js, set a maximum width, and center them using Flexbox for a clean, adaptive design. Perfect for improving the layout of your website!"></meta>
   <meta name="keywords" content="AI, Artificial Intelligence, Marketing, AI in Marketing, Digital Marketing, Marketing Strategies" />
-  <link rel="canonical" href="https://www.theinfinitewebsolutions.com/blogs/Artificial_Intelligence_(AI)_in_Marketing" />
   <meta property="og:title" content="Artificial Intelligence (AI) in Marketing" />
   <meta property="og:description" content="Learn how AI is transforming the marketing industry and its impact on strategies, content creation, and customer engagement." />
-  <meta property="og:image" content="https://www.theinfinitewebsolutions.com/blogs/Artificial_Intelligence_(AI)_in_Marketing.webp" />
-  <meta property="og:url" content="https://www.theinfinitewebsolutions.com/blogs/Artificial_Intelligence_(AI)_in_Marketing" />
+  <meta property="og:image" content="https://www.theinfinitewebsolutions.com/blogs/Artificial_Intelligence_AI_in_Marketing.webp" />
+  <meta property="og:url" content="https://www.theinfinitewebsolutions.com/blogs/Artificial_Intelligence_AI_in_Marketing" />
   <meta property="og:type" content="article" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Artificial Intelligence (AI) in Marketing" />
   <meta name="twitter:description" content="Explore how AI is reshaping the marketing landscape and enhancing strategies and customer interactions." />
-  <meta name="twitter:image" content="https://www.theinfinitewebsolutions.com/blogs/Artificial_Intelligence_(AI)_in_Marketing.webp" />
-  <meta name="twitter:url" content="https://www.theinfinitewebsolutions.com/blogs/Artificial_Intelligence_(AI)_in_Marketing.webp" />
+  <meta name="twitter:image" content="https://www.theinfinitewebsolutions.com/blogs/Artificial_Intelligence_AI_in_Marketing.webp" />
+  <meta name="twitter:url" content="https://www.theinfinitewebsolutions.com/blogs/Artificial_Intelligence_AI_in_Marketing.webp" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="author" content="Visal Naqvi" />
   <meta name="robots" content="index, follow" />      
@@ -38,7 +37,7 @@ const AIInMarketingBlog = () => {
                             "name": "Visal Naqvi"
                         },
                         "datePublished": "2024-12-17",
-                        "image": "https://www.theinfinitewebsolutions.com/blogs/Artificial_Intelligence_(AI)_in_Marketing.webp",
+                        "image": "https://www.theinfinitewebsolutions.com/blogs/Artificial_Intelligence_AI_in_Marketing.webp",
                         "articleBody": "Artificial Intelligence (AI) is transforming marketing by enhancing customer experiences and streamlining operations."
                     })
                 }}
@@ -47,7 +46,7 @@ const AIInMarketingBlog = () => {
             <BlogImage src={img} alt={"Man working on laptop"} />
             <h1 className={styles.heading}>Artificial Intelligence (AI) in Marketing</h1>
             <p className={styles.content}>
-                Have you ever wondered how Netflix seems to know what show you want to binge-watch next, or how Amazon suggests the perfect product you didn’t even know you needed? 
+                Have you ever wondered how Netflix seems to know what show you want to binge-watch next, or how Amazon suggests the perfect product you didn&apos;t even know you needed? 
                 The answer lies in Artificial Intelligence (AI). In the marketing world, AI has become a powerful tool, transforming strategies, streamlining operations, 
                 and creating personalized experiences like never before.
             </p>
@@ -55,13 +54,13 @@ const AIInMarketingBlog = () => {
             <h2 className={styles.subHeading}>What is AI in Marketing?</h2>
             <p className={styles.content}>
                 AI in marketing refers to the use of machine learning algorithms and data analysis to make smarter decisions, automate tasks, and predict customer behavior. 
-                It’s like having a marketing assistant that never sleeps and is always learning. Whether it’s chatbots answering queries, predictive analytics forecasting trends, 
+                It&apos;s like having a marketing assistant that never sleeps and is always learning. Whether it&apos;s chatbots answering queries, predictive analytics forecasting trends, 
                 or AI tools creating personalized content, the possibilities are endless.
             </p>
 
             <h2 className={styles.subHeading}>Real-World Applications</h2>
             <p className={styles.content}>
-                AI isn’t just a futuristic concept; it’s already integrated into the marketing strategies of top brands. Here are some real-world examples:
+                AI isn&apos;t just a futuristic concept; it&apos;s already integrated into the marketing strategies of top brands. Here are some real-world examples:
             </p>
             <ul className={styles.list}>
                 <li>
@@ -83,7 +82,7 @@ const AIInMarketingBlog = () => {
 
             <h2 className={styles.subHeading}>Benefits of AI for Marketers</h2>
             <p className={styles.content}>
-                Embracing AI isn’t just about staying trendy; it’s about unlocking a host of benefits that can transform marketing efforts:
+                Embracing AI isn&apos;t just about staying trendy; it&apos;s about unlocking a host of benefits that can transform marketing efforts:
             </p>
             <ol className={styles.list}>
                 <li>
@@ -102,7 +101,7 @@ const AIInMarketingBlog = () => {
 
             <h2 className={styles.subHeading}>Challenges and Ethical Considerations</h2>
             <p className={styles.content}>
-                Despite its advantages, the adoption of AI in marketing isn’t without its challenges. Marketers must navigate these issues carefully:
+                Despite its advantages, the adoption of AI in marketing isn&apos;t without its challenges. Marketers must navigate these issues carefully:
             </p>
             <ul className={styles.list}>
                 <li>
@@ -121,7 +120,7 @@ const AIInMarketingBlog = () => {
 
             <h2 className={styles.subHeading}>Future Trends in AI Marketing</h2>
             <p className={styles.content}>
-                The evolution of AI is unstoppable, and its impact on marketing will only grow in the coming years. Here’s what the future holds:
+                The evolution of AI is unstoppable, and its impact on marketing will only grow in the coming years. Here&apos;s what the future holds:
             </p>
             <ul className={styles.list}>
                 <li>
@@ -140,7 +139,7 @@ const AIInMarketingBlog = () => {
 
             <h2 className={styles.subHeading}>Final Thoughts</h2>
             <p className={styles.content}>
-                AI in marketing is no longer a luxury – it’s a necessity. From delivering personalized experiences to improving operational efficiency, the benefits are undeniable. 
+                AI in marketing is no longer a luxury – it&apos;s a necessity. From delivering personalized experiences to improving operational efficiency, the benefits are undeniable. 
                 As technology continues to advance, businesses that embrace AI will not only stay relevant but also thrive in an increasingly competitive market.
             </p>
             <p className={styles.content}>
