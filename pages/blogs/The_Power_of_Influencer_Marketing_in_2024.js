@@ -41,7 +41,6 @@ export default function BlogPost() {
                 "name": "Visal Naqvi"
               },
               "datePublished": "2024-12-19",
-              "image": `https://www.theinfinitewebsolutions.com/blogs/${postTitleWithUnderscore}.webp`,
               "articleBody": description
             })
           }}

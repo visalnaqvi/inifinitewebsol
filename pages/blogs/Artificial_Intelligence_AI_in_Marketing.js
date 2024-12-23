@@ -19,7 +19,7 @@ const AIInMarketingBlog = () => {
   <meta name="twitter:title" content="Artificial Intelligence (AI) in Marketing" />
   <meta name="twitter:description" content="Explore how AI is reshaping the marketing landscape and enhancing strategies and customer interactions." />
   <meta name="twitter:image" content="https://www.theinfinitewebsolutions.com/blogs/Artificial_Intelligence_AI_in_Marketing.webp" />
-  <meta name="twitter:url" content="https://www.theinfinitewebsolutions.com/blogs/Artificial_Intelligence_AI_in_Marketing.webp" />
+  <meta name="twitter:url" content="https://www.theinfinitewebsolutions.com/blogs/Artificial_Intelligence_AI_in_Marketing" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="author" content="Visal Naqvi" />
   <meta name="robots" content="index, follow" />      
@@ -37,7 +37,6 @@ const AIInMarketingBlog = () => {
                             "name": "Visal Naqvi"
                         },
                         "datePublished": "2024-12-17",
-                        "image": "https://www.theinfinitewebsolutions.com/blogs/Artificial_Intelligence_AI_in_Marketing.webp",
                         "articleBody": "Artificial Intelligence (AI) is transforming marketing by enhancing customer experiences and streamlining operations."
                     })
                 }}
